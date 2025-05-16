@@ -1,116 +1,36 @@
-# drinks
-Wine and Beverage Delivery Platform.
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-做一个酒水销售外卖平台是一个很有潜力的项目，特别是如果你能结合本地配送、品牌差异化和合法合规经营。下面我可以帮你梳理一个清晰的平台构建思路，包括功能、技术栈、UI 设计、合规问题等方面。你可以根据这个框架逐步落地实施。
+## Getting Started
 
-## 一、平台定位与业务模型
-1. 目标用户
-年轻消费群体（酒吧常客、聚会人群）
+First, run the development server:
 
-商务宴请需求者
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-习惯网购酒水的家庭用户
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-2. 销售模式
-自营仓储 + 自配送（效率高）
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-入驻商户 + 外卖配送（轻资产）
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-混合模式（推荐）
+## Learn More
 
-3. 核心特色
-30分钟极速达
+To learn more about Next.js, take a look at the following resources:
 
-品类丰富（洋酒、啤酒、白酒、葡萄酒、预调酒等）
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-优惠活动（拼团、满减、买赠）
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-晚间/夜间配送
+## Deploy on Vercel
 
-## 二、功能规划
-1. 用户端功能（Web/APP）
-首页：推荐商品、活动横幅、热销酒水
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-分类浏览：按类型/品牌/价格等筛选
-
-商品详情页：价格、评分、库存、促销信息
-
-下单功能：支持单品/多品组合下单
-
-支付系统：微信、支付宝、银行卡、会员积分
-
-配送跟踪：地图实时配送状态
-
-评价系统：用户可对购买进行评论
-
-年龄验证：18岁以上实名验证
-
-2. 商户端功能（如支持入驻）
-商品上架、库存管理
-
-接单发货、配送通知
-
-报表查看、订单分析
-
-3. 后台管理系统（Admin）
-用户管理、商户管理、订单管理
-
-库存与物流管理
-
-财务结算、优惠券管理
-
-投诉建议、运营数据看板
-
-## 三、技术选型建议
-前端
-Web端：Next.js + Tailwind CSS + shadcn/ui（高效现代）
-
-App端：React Native 或 Flutter
-
-地图与定位：高德地图 / 百度地图 API
-
-后端
-Node.js + Express/Koa
-
-NestJS（推荐，用于构建更模块化、可扩展的系统）
-
-数据库：PostgreSQL / MySQL
-
-文件存储：阿里云 OSS / Firebase Storage
-
-实时配送系统
-WebSocket + 地图 API 实现配送员位置实时更新
-
-可集成美团配送/达达配送等第三方
-
-## 四、UI 设计建议
-色调建议：深蓝+金色（高端）、橙色+黑色（年轻）
-
-风格：简洁、突出酒品、注重夜间模式
-
-首页大图展示新品和促销
-
-支持夜间 UI 切换，适配晚间购买场景
-
-## 五、合规注意事项（重点）
-年龄限制：必须进行身份验证，确保18岁以上
-
-营业执照：酒类销售需要取得《酒类流通备案登记》等许可
-
-地区限制：部分城市对线上售酒有限制，需按地方规定操作
-
-配送规则：避免未成年签收，确认收货人年龄
-
-## 六、盈利模式
-商品差价利润
-
-商家入驻费用
-
-广告推广位收费
-
-会员订阅/专属折扣
-
-联名合作/品牌推广
-
-
-
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
